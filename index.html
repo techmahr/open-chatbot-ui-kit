@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Chatbot UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+
+    <div class="chat-ui">
+
+        <header class="chat-header">
+            <img src="../src/images/bot.png" class="chat-avatar">
+            <div class="chat-header-text">
+                <h3>Open Chatbot</h3>
+                <span>Replies instantly</span>
+            </div>
+            <button class="chat-close">✕</button>
+        </header>
+
+        <div class="chat-body" id="chatBody">
+
+            <div class="chat-date">Today</div>
+
+            <div class="chat-block bot">
+                <div class="avatar-wrap">
+                    <img src="src/images/bot.png" class="avatar" />
+
+                    <div class="meta">
+                        <span class="name">Open Chatbot</span>
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    Welcome John!
+                </div>
+                <div class="chat-message">
+                    Hope you are doing great. How can I help you today?
+                </div>
+            </div>
+
+            <div class="chat-block bot">
+                <div class="avatar-wrap">
+                    <img src="src/images/bot.png" class="avatar" />
+
+                    <div class="meta">
+                        <span class="name">Open Chatbot</span>
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    What language you prefer to chat?
+                </div>
+                <div class="chat-message">
+                    <div class="btn-wrapper">
+                        <button class="btn btn-outline">English</button>
+                        <button class="btn btn-outline">German</button>
+                        <button class="btn btn-outline">Spanish</button>
+                        <button class="btn btn-outline">French</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-block user">
+                <div class="avatar-wrap">
+                    <div class="meta">
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <div class="btn-wrapper">
+                        <button class="btn btn-outline">English</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-block bot">
+                <div class="avatar-wrap">
+                    <img src="src/images/bot.png" class="avatar" />
+
+                    <div class="meta">
+                        <span class="name">Open Chatbot</span>
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    Can you tell me your concerns?
+                </div>
+            </div>
+
+            <div class="chat-block user">
+                <div class="avatar-wrap">
+                    <!-- <img src="src/images/bot.png" class="avatar" /> -->
+                    <div class="meta">
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    My internet is not working
+                </div>
+            </div>
+
+            <div class="chat-block user">
+                <div class="avatar-wrap">
+                    <!-- <img src="src/images/bot.png" class="avatar" /> -->
+                    <div class="meta">
+                        <span class="time">09:31 AM</span>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    Iam having this issue for the past few days, all my devices are working properly.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chat-footer">
+
+            <form class="chat-form">
+
+                <div class="footer-inner">
+
+                    <!-- Left Icons -->
+                    <div class="footer-left">
+
+                        <button type="button" class="icon-btn" id="menu-button">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <button type="button" class="icon-btn">
+                            <i class="fa fa-paperclip"></i>
+                        </button>
+
+
+                        <button type="button" class="icon-btn" id="emoji-button">
+                            <i class="far fa-grin-alt"></i>
+                        </button>
+
+                        <button type="button" class="icon-btn" id="audio-button">
+                            <i class="fa fa-microphone"></i>
+                        </button>
+
+                    </div>
+
+                    <!-- Input -->
+                    <input class="chat-input" type="text" placeholder="Type your message here..." />
+
+                    <!-- Right Icons -->
+                    <div class="footer-right">
+
+                        <button type="submit" class="send-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="src/app.js"></script>
+
+</body>
+
+</html>

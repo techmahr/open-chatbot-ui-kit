@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+.chat-ui {
+
+    width: $chat-width;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+
+    font-family: system-ui;
+
+}

@@ -1,0 +1,81 @@
+@use "./variables" as *;
+
+.chat-footer {
+
+    border-top: 1px solid $clr-border-primary;
+    background: #fff;
+    padding: 8px 12px;
+
+}
+
+.chat-form {
+    width: 100%;
+}
+
+.footer-inner {
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+/* LEFT ICONS */
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* RIGHT ICONS */
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* INPUT */
+
+.chat-input {
+
+    flex: 1;
+    border: none;
+    height: 38px;
+    padding: 0 8px;
+    font-size: 14px;
+
+    &::placeholder {
+        color: $clr-icon;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+/* ICON BUTTONS */
+
+.icon-btn,
+.send-btn {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $clr-icon;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    ;
+
+}
+
+/* SEND BUTTON */
+
+.send-btn {
+    color: $primary;
+}
